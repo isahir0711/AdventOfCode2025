@@ -29,21 +29,21 @@ public class PrintingDepartment
     {
         Console.WriteLine();
         Console.WriteLine("Current map");
-        PrintMap(m);
+        PrintMap((string[,])m);
         int accum = 0;
         string[,] copy = new string[m.GetLength(0), m.GetLength(1)];
-        Array.Copy(m, 0, copy, 0, m.Length);
+        Array.Copy(m, 0, m, 0, m.Length);
 
-        for (int i = 0; i < copy.GetLength(0); i++)
+        for (int i = 0; i < m.GetLength(0); i++)
         {
-            for (int j = 0; j < copy.GetLength(1); j++)
+            for (int j = 0; j < m.GetLength(1); j++)
             {
                 // Console.Write(m[i, j]);
-                if (copy[i, j] != "@")
+                if (m[i, j] != "@")
                 {
                     continue;
                 }
-                if (IsValid(copy, i, j))
+                if (IsValid(m, i, j))
                 {
                     // Console.WriteLine($"Accesible roll {i}, {j}");
                     m[i, j] = ".";
@@ -83,11 +83,7 @@ public class PrintingDepartment
         int n = map.GetLength(0);
         int m = map.GetLength(1);
 
-        int[,] dirs = {
-            {-1, -1}, {-1, 0}, {-1, 1},
-            {0, -1}, {0, 1},
-            {1, -1}, {1, 0}, {1, 1}
-        };
+        int[,] dirs = { { -1, -1 }, { -1, 0 }, { -1, 1 }, { 0, -1 }, { 0, 1 }, { 1, -1 }, { 1, 0 }, { 1, 1 } };
 
         for (int k = 0; k < dirs.GetLength(0); k++)
         {

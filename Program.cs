@@ -10,4 +10,7 @@
 // await PrintingDepartment.RemoveManyAsPossible();
 //Day 5
 // await Cafeteria.GetSpoiledCount();
-await Cafeteria.GetFresh();
+//Day 6
+//await TrashCompactor.Part1();
+//Day 7
+// await Laboratories.GetSplits();

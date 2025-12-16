@@ -39,6 +39,8 @@ public class Laboratories
             content[i] = string.Join("", row);
         }
 
+        Console.WriteLine("Final State:");
+        Console.WriteLine(string.Join('\n', content));
         void foo()
         {
             Console.WriteLine("Current State:");

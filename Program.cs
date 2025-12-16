@@ -14,3 +14,4 @@
 //await TrashCompactor.Part1();
 //Day 7
 // await Laboratories.GetSplits();
+

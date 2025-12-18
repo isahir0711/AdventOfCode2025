@@ -14,4 +14,7 @@
 //await TrashCompactor.Part1();
 //Day 7
 // await Laboratories.GetSplits();
-
+//day 8
+// await Playground.LargestCircuits();
+//day 9
+// await MovieTheater.GetLargestRectangle();

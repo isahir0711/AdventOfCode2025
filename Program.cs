@@ -18,3 +18,5 @@
 // await Playground.LargestCircuits();
 //day 9
 // await MovieTheater.GetLargestRectangle();
+//day 10
+// await Factory.GetButtons();
